@@ -1,12 +1,26 @@
+Thumbs.db
+target/
+
+*.log
 *.class
-*.bak
 *.jar
 *.war
 *.ear
+*.zip
+*.tar
+*.tar.gz
 
+*.java~
+
+*.properties~
+
+*.xml~
+
+.DS_Store
 .project
 .classpath
-.settings
-.metadata
+.settings/
+.metadata/
+.recommenders/
 
-target
+
