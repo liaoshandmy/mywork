@@ -1,0 +1,93 @@
+1.库地址：git@github.com:liaoshandmy/mywork.git
+
+  注册新的github账号：
+  邮箱：liaoshandmy@126.com
+  邮箱密码：19840518lshmy
+  
+  github用户名： liaoshandmy
+  github邮箱： liaoshandmy@126.com
+  github密码： 19840518lshmy
+
+2.创建SSH Key
+  ssh-keygen -t rsa -C "liaoshandmy@126.com"
+  
+3.从远程仓库克隆：
+  git clone git@github.com:liaoshandmy/mywork.git
+  
+4.查看远程仓库：
+  git remote -v
+  
+5.添加到暂存区
+  git add --all
+  
+6.提交命令：
+  git commit -m "xxx"
+  
+7.配置全局标识
+  git config --global user.name "liaoshandmy"
+  git config --global user.email "liaoshandmy@126.com"
+  
+8.创建远程库
+  git remote add origin git@github.com:liaoshandmy/mywork.git
+
+9.把本地库的所有内容推送到远程库上
+  git push -u origin master
+  注意：第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，
+  还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令
+  
+10.配置别名
+   git config --global alias.co checkout
+   git config --global alias.ci commit
+   git config --global alias.br branch
+   git config --global alias.unstage 'reset HEAD'
+   git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+   
+11.把暂存区的修改撤销掉
+   git reset HEAD test.py
+   git unstage test.py
+   
+12.版本回退
+   git log
+   git reset --hard HEAD^
+   git reset --hard HEAD^^
+   git reset --hard HEAD~100
+   git reset --hard 3628164
+
+13.创建分支：git branch dev
+   切换分支：git checkout dev
+   删除分支：git branch -d dev
+   合并分支：git merge dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
